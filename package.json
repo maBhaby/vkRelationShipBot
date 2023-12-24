@@ -1,0 +1,24 @@
+{
+  "name": "vkBot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "env-cmd -f .env nodemon src/app.ts",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@vk-io/hear": "^1.1.1",
+    "express": "^4.18.2",
+    "node-vk-bot-api": "^3.5.0",
+    "vk-io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
