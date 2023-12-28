@@ -23,9 +23,9 @@ export const secondKeyboard = Keyboard.builder()
     label: 'РАССЧИТАТЬ СТОИМОСТЬ',
     color: Keyboard.SECONDARY_COLOR
   })
-  .textButton({
+  .urlButton({
     label: 'ОТЗЫВЫ 🤝🏻',
-    color: Keyboard.SECONDARY_COLOR
+    url: 'https://vk.com/board220006931'
   })
   .row()
   .textButton({
