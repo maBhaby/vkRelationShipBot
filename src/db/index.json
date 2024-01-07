@@ -1,9 +1,1 @@
-{
-  "yuanRate": 13.7,
-  "percentageCommission": 5,
-
-  "deliveryToPetersburgShoese": 2300,
-  "deliveryToPetersburgOutwear": 2000,
-  "deliveryToPetersburgTShirt": 1500,
-  "deliveryToPetersburgSocks": 1100
-}
+{"yuanRate":13.7,"percentageCommission":5,"deliveryToPetersburgShoese":2300,"deliveryToPetersburgOutwear":2000,"deliveryToPetersburgTShirt":1500,"deliveryToPetersburgSocks":1100,"adminId":[349785212,307014681]}
