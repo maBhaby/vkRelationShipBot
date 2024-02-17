@@ -142,6 +142,8 @@ hearManager.hear(REG_EXP.NUMBERS, async (context, next) => {
       console.log('error', error)
       await context.send({ message: 'Ошибка' })
     }
+
+    return
   } else {
     return next()
   }
@@ -246,6 +248,8 @@ hearManager.hear(REG_EXP.ACTUAL_COURSE, async (context) => {
 })
 
 hearManager.hear(REG_EXP.ORDER, async (context) => {
+  console.log('context', context);
+  
   await context.send({
     message: MESSAGES.PLACE_AN_ORDER,
   })
@@ -278,12 +282,14 @@ hearManager.hear(REG_EXP.START, async (context) => {
 
 // -------------------------for admin---------------------------------
 
-hearManager.hear(REG_EXP.ADMIN_INIT, async (ctx) => {
+hearManager.hear(REG_EXP.ADMIN_INIT, async (ctx, next) => {
   if (jsonDB.adminId.includes(ctx.senderId)) {
     await ctx.send({
       message: 'admin panel',
       keyboard: adminKeyboard,
     })
+  } else {
+    return next()
   }
 })
 
